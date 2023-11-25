@@ -14,9 +14,15 @@ ssh-keygen -N "" -f id_esxi
 <br><br>
 &nbsp;This creates two files - id_esxi and id_esxi.pub.<br>
 &nbsp;Append the public key to /etc/ssh/keys-root/authorized_keys on your ESXi box from Linux:<br>
-&nbsp;&nbsp;&nbsp;cat id_esxi.pub | ssh root@HOSTNAME_OR_IP_ADDRESS 'cat >>/etc/ssh/keys-root/authorized_keys'<br><br>
+```
+cat id_esxi.pub | ssh root@HOSTNAME_OR_IP_ADDRESS 'cat >>/etc/ssh/keys-root/authorized_keys'
+```
+<br><br>
 &nbsp;To test, you can ssh into your ESXi box by just using the private key:<br>
-&nbsp;&nbsp;&nbsp;ssh -i id_esxi root@HOSTNAME_OR_IP_ADDRESS<br>
+```
+ssh -i id_esxi root@HOSTNAME_OR_IP_ADDRESS
+```
+<br>
 
 
 # Tested On
