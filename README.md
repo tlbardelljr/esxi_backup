@@ -8,7 +8,10 @@ ESXi Backup Script
 
 # You need ssh keys installed on ESXi host from linux computer that will run this script. Run commands below as root. Run this script as root.
 &nbsp;On a Linux box, create a key pair without passphrase:<br>
-&nbsp;&nbsp;&nbsp;ssh-keygen -N "" -f id_esxi<br><br>
+```
+ssh-keygen -N "" -f id_esxi
+```
+<br><br>
 &nbsp;This creates two files - id_esxi and id_esxi.pub.<br>
 &nbsp;Append the public key to /etc/ssh/keys-root/authorized_keys on your ESXi box from Linux:<br>
 &nbsp;&nbsp;&nbsp;cat id_esxi.pub | ssh root@HOSTNAME_OR_IP_ADDRESS 'cat >>/etc/ssh/keys-root/authorized_keys'<br><br>
