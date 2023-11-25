@@ -7,12 +7,12 @@ ESXi Backup Script
 
 
 # You need ssh keys installed on ESXi host from linux computer that will run this script. Run commands below as root. Run this script as root.
-On a Linux box, create a key pair without passphrase:<br>
+&nbsp;On a Linux box, create a key pair without passphrase:<br>
 &nbsp;&nbsp;&nbsp;ssh-keygen -N "" -f id_esxi<br><br>
-This creates two files - id_esxi and id_esxi.pub.<br>
-Append the public key to /etc/ssh/keys-root/authorized_keys on your ESXi box from Linux:<br>
+&nbsp;This creates two files - id_esxi and id_esxi.pub.<br>
+&nbsp;Append the public key to /etc/ssh/keys-root/authorized_keys on your ESXi box from Linux:<br>
 &nbsp;&nbsp;&nbsp;cat id_esxi.pub | ssh root@HOSTNAME_OR_IP_ADDRESS 'cat >>/etc/ssh/keys-root/authorized_keys'<br><br>
-To test, you can ssh into your ESXi box by just using the private key:<br>
+&nbsp;To test, you can ssh into your ESXi box by just using the private key:<br>
 &nbsp;&nbsp;&nbsp;ssh -i id_esxi root@HOSTNAME_OR_IP_ADDRESS<br>
 
 
@@ -35,9 +35,3 @@ chmod +x ./gnome-like-win11.sh
 ```
 ./gnome-like-win11.sh
 ```
-&nbsp;<b>optional</b><br>(tools for modifying theme)
-
-```
-sudo apt install gnome-tweaks gnome-shell-extensions gnome-shell-extension-prefs
-```
-
