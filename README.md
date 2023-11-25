@@ -34,13 +34,13 @@ Ubuntu 22.04<br>
 
 
 ```
-wget https://raw.githubusercontent.com/tlbardelljr/gnome-like-win11/main/gnome-like-win11.sh
+wget https://raw.githubusercontent.com/tlbardelljr/esxi_backup/main/esxi_backup.sh
 ```
 
 ```
-chmod +x ./gnome-like-win11.sh
+chmod +x ./esxi_backup.sh
 ```
 
 ```
-./gnome-like-win11.sh
+./esxi_backup.sh
 ```
