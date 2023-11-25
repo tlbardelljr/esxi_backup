@@ -1,9 +1,9 @@
-# ESXi bash Backup script from remote
+# Remote ESXi bash Backup script
 ESXi Backup Script
 
 # Whats this do?
 &nbsp; Backup directory needs to be on ESXi host.<br>
-&nbsp; If you want to be on a NAS then setup a datastore on ESXi host for the NAS<br>
+&nbsp; If you want backups to be on a NAS then setup a datastore on ESXi host for the NAS<br>
 
 
 # You need ssh keys installed on ESXi host from linux computer that will run this script. Run commands below as root. Run this script as root.
